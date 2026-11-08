@@ -1,0 +1,259 @@
+*MERN Stack Assignment – E-Commerce Application*
+Objective
+Build a complete MERN Stack E-Commerce Application using the MERN Stack with Authentication, Role-Based Authorization, Product Management, Shopping Cart, Wishlist, Checkout, and Order Management.
+
+User Roles
+*1. Admin*
+
+The Admin manages the complete application.
+Admin Dashboard
+
+Display the following statistics:
+	•	Total Users
+	•	Total Customers
+	•	Total Admins
+	•	Total Products
+	•	Total Orders
+	•	Total Revenue (Optional)
+	•	Recent Orders (Optional)
+	•	Recent Registered Users (Optional)
+
+*User Management*
+Admin should be able to:
+	•	View all registered users
+	•	View user details
+	◦	Name
+	◦	Email
+	◦	Role
+	◦	Registration Date
+	•	Display total registered users
+	•	(Optional) Change user role
+	•	(Optional) Delete user
+
+Product Management
+Admin should be able to:
+	•	Add Product
+	•	Update Product
+	•	Delete Product
+	•	View All Products
+
+Each product should contain:
+	•	Product Image
+	•	Product Name
+	•	Description
+	•	Category 
+	•	Price
+	•	Stock Quantity
+	•	Created Date
+
+Order Management
+Admin should be able to:
+	•	View all orders
+	•	View customer details
+	•	View ordered products
+	•	View quantities
+	•	View total amount
+	•	View order date
+	•	Update order status (Optional)
+
+*2. Customer*
+Authentication
+	•	Register
+	•	Login
+	•	Logout
+
+Customer Dashboard
+Customer should be able to view:
+	•	Total Orders
+	•	Wishlist Items
+	•	My Orders
+	•	Profile (Optional)
+
+Customer must only be able to view their own orders.
+
+Public Pages
+	•	Home
+	•	Products
+	•	Product Details
+	•	Login
+	•	Register
+
+Home Page
+Display all products added by the admin.
+Each product card should display:
+	•	Product Image
+	•	Product Name
+	•	Category
+	•	Price
+	•	Short Description
+	•	Add to Cart
+	•	Favorite Button
+	•	View Details
+
+Whenever the admin adds a new product, it should automatically appear on the frontend.
+
+Product Details Page
+Display:
+	•	Large Product Image
+	•	Product Name
+	•	Price
+	•	Description
+	•	Category
+	•	Stock
+	•	Add to Cart
+	•	Favorite Button
+
+Shopping Cart
+Users should be able to:
+	•	Add products
+	•	Remove products
+	•	Increase quantity
+	•	Decrease quantity
+	•	View subtotal
+	•	View total amount
+	•	View total items
+
+Wishlist (Favorites)
+Users should be able to:
+	•	Add products to Favorites
+	•	Remove products from Favorites
+	•	View all favorite products
+
+Checkout Flow
+When the user clicks the Checkout button, the application should always open the Checkout Page.
+If the User is Logged In
+	•	Display the complete checkout form.
+	•	Allow the user to review the cart and place the order.
+If the User is Not Logged In
+	•	Do not redirect to the Login page.
+	•	Stay on the Checkout page.
+	•	At the top of the page, display a login section containing:
+	◦	Email
+	◦	Password   
+	◦	Login Button
+	•	Display the checkout form below the login section.
+	•	Keep the checkout form disabled until login is successful.
+	•	After successful login:
+	◦	Hide the login section.
+	◦	Enable the checkout form.
+	◦	Preserve the shopping cart.
+	◦	Continue the checkout process without leaving the page.
+
+Checkout Page
+Login Section (Only for Unauthenticated Users)
+	•	Email 
+	•	Password
+	•	Login Button
+This section should automatically disappear after successful login.
+Checkout Form
+	•	Full Name
+	•	Email (Auto-filled after login if available)
+	•	Phone Number
+	•	Shipping Address
+	•	City
+	•	Postal Code (Optional)
+	•	Order Notes (Optional)
+Order Summary
+	•	Ordered Products
+	•	Quantity
+	•	Individual Price
+	•	Subtotal
+	•	Total Amount
+Place Order
+Clicking Place Order should:
+	•	Validate checkout information
+	•	Save the order in MongoDB
+	•	Associate the order with the logged-in customer
+	•	Clear the shopping cart
+	•	Redirect to My Orders or Order Success page
+
+My Orders
+Customers should only be able to view their own orders.
+Each order should display:
+	•	Order ID
+	•	Ordered Products
+	•	Quantity
+	•	Total Amount
+	•	Order Date
+	•	Order Status (Optional)
+
+Authentication & Authorization
+Implement:
+	•	JWT Authentication
+	•	bcrypt Password Hashing
+	•	Protected Routes
+	•	Role-Based Authorization
+Only Admin can access Admin routes.
+Customers must not be able to access Admin pages.
+
+Suggested Backend Structure
+	•	config
+	•	middlewares
+	•	models
+	•	routes
+	•	utils
+
+Technologies
+	•	React
+	•	Node.js
+	•	Express.js
+	•	MongoDB
+	•	JWT
+	•	bcrypt
+	•	Cloudinary
+	•	Axios
+	•	React Router
+	•	Tailwind CSS / Bootstrap
+
+Bonus Features (Optional)
+	•	Product Search
+	•	Category Filter
+	•	Price Filter
+	•	Pagination
+	•	Responsive Design
+	•	Dark Mode
+	•	Toast Notifications
+	•	Loading Spinner
+	•	User Profile
+	•	Order Status Update
+	•	Stock Management
+	•	Sales Analytics
+	•	Dashboard Charts
+
+Submission Requirements
+Submit:
+	•	GitHub Client Repository
+	•	GitHub Server Repository
+	•	Live Client URL
+	•	Live Server URL
+	•	README.md with installation and setup instructions
+
+Evaluation Criteria
+Marks
+Authentication & Authorization 15
+Admin Dashboard 10
+User Management 10
+Product CRUD 15
+Shopping Cart 10
+Wishlist 5
+Checkout & Order Placement 15
+Customer Dashboard 10
+Database Design 5
+UI/UX & Responsiveness 5
+*Total: 100 Marks*
+
+Important Instructions
+	•	Follow a clean folder structure.
+	•	Write reusable React components.
+	•	Use proper naming conventions.
+	•	Store sensitive information in environment variables.
+	•	Implement proper validation and error handling.
+	•	Protect private routes using JWT.
+	•	Apply role-based authorization correctly.
+	•	Upload product images to Cloudinary.
+	•	Write clean, readable, and maintainable code.
+	•	The application should be fully functional before submission.
+	•	Plagiarized or incomplete projects may receive reduced marks.
+
+Best Regards
+Muhammad Umair Ahmad
