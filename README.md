@@ -12,7 +12,7 @@
 ## Storefront Preview
 
 <div align="center">
-  <img src="./docs/vibecart-storefront-preview.png" alt="VibeCart Storefront Preview" width="100%" />
+  <img src="https://github.com/tauseefRamzan-dev/VibeCart/blob/main/screencapture-vibecart.png" alt="VibeCart Storefront Preview" width="100%" />
 </div>
 
 **A MERN online storefront for product discovery, shopping, order placement, and store administration.**
